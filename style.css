@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --globalfont: 'Josefin Sans', sans-serif;
+    --padding: 50px;
+    --whitefont: rgb(205, 204, 198);
+}
+
+p,h1,h2,h3,h4{
+    font-size: 2em;
+    line-height: normal;
+    margin-block: 1rem;
+}
+label, button{
+    font-size: 1.5em;
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: var(--globalfont);
+    
+    
+    
+}
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70vw;
+    
+    
+    
+    
+    
+}   
+.addme{
+    
+    padding-inline:var(--padding);
+    
+} 
+.submit{
+    padding-inline:var(--padding);
+    
+}
+
+#formulario{
+    padding-inline:var(--padding);
+    
+   
+    
+    box-shadow: 2px 2px 4px rgb(146, 155, 198); ;
+
+ 
+}
+
+.input-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+       
+  
+}
+
+.input-boxes .input{
+    width: calc(50% - 200px);
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+.input-boxes .input input{
+    height: 20px;
+    width: 100%;
+    border-radius: 3px;
+    border: 0.3px solid rgba(145, 145, 165, 0.459);
+    box-shadow: 2px 2px 4px rgb(146, 155, 198);
+    outline: none;
+    padding: 5px;
+}
+
+
+
+.left-side{
+    background-color: rgb(6, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: sticky;
+    
+    
+    
+}
+.left-side .main-img{
+    width: 30vw;
+    height: 100vh;
+    object-fit: cover;
+      
+}
+   
+
+.left-side .logo{
+    background-color: rgba(0, 0, 0, 0.533);
+    position: absolute;
+    
+    width: 30vw;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: var(--whitefont);
+}
+.left-side .logo-img{
+    object-fit: contain;
+    height: 30vh;
+    width: 20vw;
+}
+
+
+.submit button{
+    background-color: rgb(64, 64, 68);
+    padding: 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(146, 155, 198);
+    color: var(--whitefont);
+    font-weight: 700;
+    letter-spacing: 2px;  
+}
+.submit button:hover{
+    background-color: rgb(42, 42, 43);
+}
+.submit button:active{
+    position: relative;
+    top: 1px;
+}
+
+@media  (max-width:1200px) {
+    .input-boxes{
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: left;
+        margin-bottom: 10px     
+      
+    }
+    .left-side .main-img{
+        object-fit: cover;
+        width: 30vw;
+        height: 100%;
+        position: sticky;
+        
+    }
+    .left-side .logo{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .left-side .logo-img{
+        width: 30vw;
+        position: sticky;
+    }
+    .input-boxes .input input{
+        height: 20px;
+        width: 300px;
+        border-radius: 3px;
+        border: 0.3px solid rgba(145, 145, 165, 0.459);
+        box-shadow: 2px 2px 4px rgb(146, 155, 198);
+        outline: none;
+        padding: 5px;
+        
+    }
+    .submit{
+        margin-block: 20px;
+    }
+    
+}
+@media (max-width:630px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .left-side .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        width: 100vw;
+    }
+    .left-side .logo-img{
+        height: 20vh;
+    }
+
+    .left-side .main-img{
+        object-fit: cover;
+        width: 100vw;
+        height: 30vh
+        
+    }
+    .left-side{
+        margin-bottom: 30px;
+    }
+    .sign-up{
+        width: 100%;
+       
+            
+        
+    }  
+    .input-boxes .input input{
+        height: 20px;
+        width: 80vw;
+        border-radius: 3px;
+        border: 0.3px solid rgba(145, 145, 165, 0.459);
+        box-shadow: 2px 2px 4px rgb(146, 155, 198);
+        outline: none;
+        padding: 5px;
+        
+    }
+}
